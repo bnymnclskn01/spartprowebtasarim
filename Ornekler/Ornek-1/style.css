@@ -1,0 +1,28 @@
+*{
+    text-decoration: none;
+    color:black;
+}
+h1{
+    color:brown;
+}
+h3{
+    color:cadetblue;
+}
+.group1{
+    width: 50%;
+    background-color: black;
+}
+.group1 p{
+    font-weight: bold;
+    color:white;
+}
+.group1 h5{
+    color:red;
+}
+.group2{
+    width: 50%;
+    background-color: red;
+}
+table{
+    width: 100%;
+}

@@ -1,0 +1,73 @@
+<html>
+    <head>
+      <style>
+          .acilirmenu{
+               width: 180px;
+               height: auto;
+          }
+          .acilirmenu ul{
+              width: 180px;
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+          }
+          .acilirmenu ul li{
+              position: relative;
+          }
+          .acilirmenu ul li ul{
+              position: absolute;
+              list-style-type: none;
+              left: 179px;
+              width: 180px;
+              display: none;
+              top: 0;
+          }
+          .acilirmenu ul li a{
+              height: 30px;
+              display: block;
+              text-decoration: none;
+              background-color: chocolate;
+              color: white;
+              font: 500 15px Verdana;
+              padding: 5px;
+              border :1px solid #ffffff;
+              border-bottom: 0;
+              text-align: center;
+              line-height: 30px;
+          }
+          .acilirmenu ul li a:hover{
+              background-color: white;
+              color:chocolate;
+          }
+          .acilirmenu ul li:hover ul{
+              display: block;
+          }
+      </style>
+    </head>
+    <body>
+        <div class="acilirmenu">
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li>
+                    <a href="#">Projeler</a>
+                    <ul>
+                        <li><a href="#">Web Tasarım</a></li>
+                        <li><a href="#">E-Ticaret Tasarım</a></li>
+                        <li><a href="#">Otomasyon Tasarım</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Ürünler</a>
+                    <ul>
+                        <li><a href="#">Web Tasarım</a></li>
+                        <li><a href="#">E-Ticaret Tasarım</a></li>
+                        <li><a href="#">Otomasyon Tasarım</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeri</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

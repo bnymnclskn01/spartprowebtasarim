@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bu benim 3.projedir.</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            header ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+            }
+            header ul li{
+                float: left;
+            }
+            header ul li a{
+                display: block;
+                padding: 12px 14px;
+                text-decoration: none;
+                color:royalblue;
+                background-color: silver;
+            }
+            header ul li a:hover{
+                color:skyblue;
+                background-color: teal;
+            }
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+                overflow: hidden;
+                background-color: teal;
+            }
+            ul li{
+                display: inline-block;
+            }
+            ul li a{
+                display: block;
+                color:white;
+                text-align: center;
+                text-decoration: none;
+                padding: 12px 14px;
+            }
+            ul li a:hover{background-color: darkmagenta;}
+            ul li ul{
+                background-color: darkorange;
+                display: none;
+                position: absolute;
+                width: 100%;
+            }
+            ul li:hover ul{
+                display: block;
+            }
+            li ul li{display: block;}
+        </style>
+    </head>
+    <body>
+        <!--
+        <header>
+            <ul>
+                <li>
+                    <a href="#">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="#">Hakkimizda</a>
+                </li>
+                <li>
+                    <a href="#">Projeler</a>
+                </li>
+                <li>
+                    <a href="#">İletişim</a>
+                </li>
+            </ul>
+        </header>
+        -->
+        <ul>
+            <li>
+                <a href="#">Anasayfa</a>
+            </li>
+            <li>
+                <a href="#">Hakkimizda</a>
+            </li>
+            <li>
+                <a href="#">Projeler</a>
+                <ul>
+                    <li>
+                        <a href="#">Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="#">Hakkimizda</a>
+                    </li>
+                    <li>
+                        <a href="#">Projeler</a>
+                    </li>
+                    <li>
+                        <a href="#">İletişim</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">İletişim</a>
+            </li>
+        </ul>
+    </body>
+</html>
+<!--
+header dediğimiz menümüzün ana kısmı
+<ul>
+    sıralı listeleme
+
+                list-style-type: none; yanında çıkan nokta işaretini kaldırdı
+                padding: 0; sağdan soldan yukarıdan aşağıdan boşlukların hepsini 0 aldı
+                margin: 0; sağdan soldan yukarıdan aşağıdan boşlukların hepsini 0 aldı
+                overflow: hidden; yerini sabit tutmak için kullanılır
+
+</ul>
+
+
+header ul li{
+                float: left; bütün ul li nin içerisinde yer alanları sola yasladık.
+            }
+            header ul li a{
+                display: block;
+                padding: 12px 14px; soldan 12 px boşluk yukarıdan 14 px boşluk bırakıldı.
+                text-decoration: none; a etiketi içersinde yazan yazının altında olan çizgiyi kaldırdık.
+                color:royalblue; yazı rengini verdik
+                background-color: silver; arka plan rengini verdik
+            }
+
+                        header ul li a:hover{ üzerine gelindiği anda yapılacak olan işlemler
+                color:skyblue; yazı rengi değişir.
+                background-color: teal; arka plan rengi değişir.
+            }
+-->
