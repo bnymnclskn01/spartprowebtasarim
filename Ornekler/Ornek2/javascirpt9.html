@@ -1,0 +1,25 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p id="sifre"></p>
+        <script>
+            function rastgeleSembol(uzunluk,semboller){
+                var maske='';
+                if(semboller.indexOf('a') >-1) maske+='abcdefghijklmnopqrstuvwyz';
+                if(semboller.indexOf('A') >-1) maske+='ABCDEFGHIJKLMNOPQRSTUVYZ';
+                if(semboller.indexOf('0') >-1) maske+='0123456789';
+                var sonuc='';
+                for(var i =uzunluk; i > 0; --i)
+                {
+                    sonuc+=maske[Math.floor(Math.random()*maske.length)];
+                }
+                return sonuc
+
+            }
+            document.getElementById("sifre").innerHTML="Sizin için özel oluşturduğumuz şifre : "+ rastgeleSembol(10,'0aA');
+                console.log(rastgeleSembol)
+        </script>
+    </body>
+</html>
