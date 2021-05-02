@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>
+            <label for="textFiled">Vize : </label>
+            <input type="text" name="textFiled" id="txtVize">
+        </p>
+        <p>
+            <label for="textFiled2">Final : </label>
+            <input type="text" name="textFiled2" id="txtFinal">
+        </p>
+        <p>
+            <input type="button" name="button" id="hesap" value="Hesapla">
+        </p>
+        <p>
+            <label id="lblSonuc"></label>
+        </p>
+        <script>
+            var vize =document.getElementById("txtVize");
+            var final=document.getElementById("txtFinal");
+            var btnhesap=document.getElementById("hesap");
+            btnhesap.onclick=function(){
+                var durum="";
+                var vizeNotu= Number(vize.value);
+                var finalNotu= Number(final.value);
+                var ortalama= (vizeNotu * 0.4) + (finalNotu * 0.6);
+                if(ortalama >= 50 && finalNotu >= 50)
+                {
+                    durum="Ortalamayı tutturup geçtiniz";
+                }
+                else if(ortalama >= 50  || finalNotu < 50)  // ve && iki koşulunda karşılanması gerek eğerki veya kullanırsak || içlerinden sadece bir tanesi bile tutulsa yerli olur
+                {
+                    durum="Final Notu 50 den düşük olduğu için kaldınız";
+                }
+                else{
+                    durum="Direk Kaldınız";
+                }
+                document.getElementById("lblSonuc").innerHTML="Ortalamınız "+ ortalama+" ve Durumunuz "+ durum;
+                window.alert("Ortalamanız : "+ ortalama + " Durumunuz" + durum);
+                console.log(btnhesap.onclick)
+            }
+        </script>
+    </body>
+</html>

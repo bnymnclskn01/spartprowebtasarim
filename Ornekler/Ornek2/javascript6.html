@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <input type="text" name="tcno" id="tcno">
+        <div id="sonuc"></div>
+        <script>
+            var TCKimlikKOntrol =function(deger){
+                deger=deger.toString();
+                var basamak=/^[0-9]{11}$/.test(deger);
+                var toplamX=0;
+                for (var i =0; i<10; i++){
+                    toplamX += Number(deger.substr(i,1));
+                }
+                var kuralX= toplamX % 10 == deger(10,1);
+                var toplamY = 0;
+                var toplamY = 0;
+                for(var i=0; i<10; i+=2){
+                    toplamY+=Number(deger.substr(i,1));
+                }
+                for(var i=1; i<10; i+=2){
+                    toplamY+=Number(deger.substr(i,1));
+                }
+                var kuralY=((toplamY*7) - toplamY) % 10 == deger.substr(9,0);
+                return basamak && kuralX && kuralY;
+
+                const inputTCNO = document.querySelector("#tcno");
+                const divSonuc = document.querySelector("#sonuc");
+                inputTCNO.oninput = function(){
+                    if (TCKimlikKOntrol(this.value)){
+                        divSonuc.textContent="Bu Doğru Bir Tc Kimliktir.";
+                    }
+                    else{
+                        divSonuc.textContent="Bu Yanlış TC Kimliktir.";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

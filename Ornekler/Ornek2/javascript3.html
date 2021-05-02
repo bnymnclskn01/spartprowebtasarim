@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            .title{
+                color:teal;
+            }
+            .yazi{
+                border-color: teal;
+                color:violet;
+                width: 500px;
+                border-radius: 5px;
+            }
+            .yazi:hover{
+                border-color:violet;
+            }
+            .sonuc{
+                border: 2px solid violet;
+                width: 180px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <label class="title">Yorum Giriniz</label><br>
+        <textarea class="yazi"  rows="10" id="yazi" placeholder="30 karekterden fazla giremezsiniz"></textarea>
+        <div class="sonuc" id="sonuc"></div>
+        <script>
+            var yazi=document.getElementById("yazi");
+            var sonuc=document.getElementById("sonuc");
+            yazi.oninput=function(){
+                var maksimum=30;
+                this.value=this.value.substr(0,maksimum);
+                var kalan=maksimum-this.value.length;
+                sonuc.innerHTML='Kalan Karekter Sayısı : '+kalan;
+            }
+        </script>
+    </body>
+</html>

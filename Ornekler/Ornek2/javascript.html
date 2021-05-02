@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            .sayi1{
+                color:teal;
+                border-color: red;
+                border-radius: 5px;
+            }
+            .sayi1:hover{
+                border-color: teal;
+            }
+            .sayi2:hover{
+                border-color: red;
+            }
+            .sayi2{
+                color:red;
+                border-color: teal;
+                border-radius: 5px;
+            }
+            .buton{
+                background-color: seagreen;
+                color:white;
+                border-radius: 5px;
+                border-color: turquoise;
+                width: 75px;
+                height: 45px;
+            }
+            .buton:hover{
+                background-color: teal;
+                color:white;
+                border-radius: 5px;
+                border-color: seagreen;
+                width: 75px;
+                height: 45px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number" class="sayi1" id="sayi1" value="">
+        <input type="number" class="sayi2" id="sayi2" value="">
+        <input type="submit" class="buton" id="hesapla" value="Hesapla">
+        <br>
+        <br>
+        <br>
+        <input type="number" class="kisa" id="kisa" placeholder="Lütfen Kısa Kener Giriniz">
+        <input type="number" class="uzun" id="uzun" placeholder="Lütfen Uzun Kener Giriniz">
+        <input type="submit" class="dikdortgen" id="hesaplama" value="Hesapla">
+        <script>
+            var txtSayi1=document.getElementById("sayi1");
+            var txtSayi2=document.getElementById("sayi2");
+            var btnHesapla=document.getElementById("hesapla");
+
+            btnHesapla.onclick=function(){
+              var sayi1 = Number(txtSayi1.value);
+              var sayi2 = Number(txtSayi2.value);
+              var toplam=0;
+              toplam=sayi1+sayi2;
+              window.alert("Sayıların Toplamı : "+toplam);  
+            }
+
+            function hesaplama(){
+                var kk=document.getElementById("kisa").value;
+                var uk=document.getElementById("uzun").value;
+                var alan =kk*uk;
+                var cevre = (kk+uk)*2;
+                alert("Dikddörtgen Alanı : "+alan+" Dikdörtgen Çevre : "+cevre);
+            }
+            var hesapbtn=document.getElementById("hesaplama");
+            hesapbtn.onclick=hesaplama;
+        </script>
+    </body>
+</html>

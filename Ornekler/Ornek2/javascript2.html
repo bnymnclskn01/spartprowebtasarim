@@ -1,0 +1,61 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="number" id="sayi">
+        <input type="submit" id="hesapla" value="Hesapla">
+        <div id="durumgoster"></div>
+        <script>
+            var Sayi =document.getElementById("sayi");
+            var Hesapla=document.getElementById("hesapla");
+            Hesapla.onclick=islemYap;
+            function islemYap(){
+                var sayilar=Number(Sayi.value);
+                var durumGoster=document.getElementById("durumgoster");
+                if(sayilar < 0)
+                {
+                    durumGoster.innerHTML="Sayı Negatiftir";
+                }
+                else if(sayilar > 0)
+                {
+                    durumGoster.innerHTML="Sayı Pozitiftir.";
+                }
+                else{
+                    durumGoster.innerHTML="Sayı Nötrdür";
+                }
+            }
+        </script>
+<!--
+            <p id="gunler"></p>
+        <script>
+            var day;
+            switch(new Date().getDate()){
+                case 0:
+                    day="Pazar";
+                    break;
+                case 1:
+                    day="Pazartesi";
+                    break;
+                case 2:
+                    day="Salı";
+                    break;
+                case 3:
+                    day="Çarşamba";
+                    break;
+                case 4:
+                    day="Perşembe";
+                    break;
+                case 5:
+                    day="Cuma";
+                    break;
+                case 6:
+                    day="Cumartesi";
+                    break;
+
+            }
+            document.getElementById("gunler").innerHTML ="Bugün "+ day;
+        </script>
+-->
+    </body>
+</html>

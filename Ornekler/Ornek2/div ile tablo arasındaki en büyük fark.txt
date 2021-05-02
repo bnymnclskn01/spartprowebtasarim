@@ -1,0 +1,18 @@
+div ile tablo arasındaki en büyük fark
+<div>
+<div class card><h3></h3><p></p></div>
+<div class card><h3></h3><p></p></div>
+<div class card><h3></h3><p></p></div>
+</div>
+<table>
+<tr>
+<th>Adı</>
+<th>Soyadı</>
+<th>Yaş</>
+</tr>
+<tr>
+<td>Ahmet</td>
+<td>Güneş</td>
+<td>55</td>
+</tr>
+</table>
