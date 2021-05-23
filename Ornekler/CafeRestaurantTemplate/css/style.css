@@ -385,6 +385,29 @@ img{
 .contact__description{
     margin-bottom: var(--mb-3);
 }
+.form-group{
+  width: 100%;
+  height: auto;
+}
+.form-group input{
+  border-color: var(--first-color);
+  width: 100%;
+  margin-bottom: var(--mb-2);
+  color:var(--first-color-alt);
+  padding: var(--mb-1);
+}
+.form-group input:hover{
+  border-color: var(--first-color);
+  width: 100%;
+  margin-bottom: var(--mb-2);
+  color:var(--title-color);
+}
+.form-group textarea{
+  border-color: var(--first-color);
+  width: 100%;
+  margin-bottom: var(--mb-2);
+  color:var(--first-color-alt);
+}
 /*Contact Us*/
 
 /*Footer*/

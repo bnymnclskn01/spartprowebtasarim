@@ -1,0 +1,31 @@
+*{
+    margin:0;
+}
+.about{
+    margin-top: 2.5rem;
+}
+.about h1{
+    color:dodgerblue;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.about hr{
+    background-color:lightsteelblue;
+}
+.about h2{
+    color:lightskyblue;
+    font-size: 25px;
+    font-weight: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about p{
+    text-align: justify;
+    color:lightslategray;
+    text-shadow: lightslategray;
+    font-size: 1.10rem;
+}
+.about img{
+    border-radius: 1.5rem;
+}
